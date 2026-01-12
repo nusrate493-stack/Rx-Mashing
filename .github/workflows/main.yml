@@ -6,7 +6,7 @@ on:
 jobs:
   secure-rdp:
     runs-on: windows-latest
-    timeout-minutes: 3600
+    timeout-minutes: 93600
 
     steps:
       - name: Configure Core RDP Settings
@@ -103,7 +103,7 @@ jobs:
           Write-Host "`n=== RDP ACCESS ==="
           Write-Host "Address: $env:TAILSCALE_IP"
           Write-Host "Username: RDP"
-          Write-Host "Password: $(echo $env:RDP_CREDS)"
+          Write-Host "Password: Shahed"
           Write-Host "==================`n"
           
           # Keep runner active indefinitely (or until manually cancelled)
